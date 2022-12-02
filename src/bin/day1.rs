@@ -6,7 +6,7 @@ fn main() {
     loop {
         match iter.next() {
             Some("") => {
-                sums.push(curr_sum.clone());
+                sums.push(curr_sum);
                 curr_sum = 0;
             },
             Some(calorie) => {curr_sum += calorie.parse::<u32>().expect("PORQUE MARIA!!!");},
