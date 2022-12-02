@@ -9,7 +9,7 @@ fn main() {
                 sums.push(curr_sum);
                 curr_sum = 0;
             },
-            Some(calorie) => {curr_sum += calorie.parse::<u32>().expect("PORQUE MARIA!!!");},
+            Some(calorie) => {curr_sum += calorie.parse::<u32>().expect("PORQUE MARIA!!!");}, // Yes, it is a Primeagen reference
             None => break, 
         }
     }
